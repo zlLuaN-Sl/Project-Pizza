@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+.container {
+    width:85vw;
+    height:auto;
+    margin: auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.img-title img {
+    width: 100%;
+}
+
+
+
+
+
+                            /* HEADER -TITLE */
+
+
+
+.container-header {
+    display: flex;
+    padding: 3rem; 
+    align-items: center;
+}
+
+.container-header img {
+    width: 8%;
+    height: 8%;
+    border-radius: 50%;
+}
+
+
+.container-box {
+    display: flex;
+}
+
+.text-title {
+    padding: 20px;
+}
+
+.text-title h1 {
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #5f5b5b;
+}
+
+.text-title span {
+    color: green;
+    font-weight: 500;
+}
+
+.text-info {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-bottom: 30px;
+}
+.text-info .barra {
+    border-left: 1px solid black;
+    padding: 0 10px;
+    margin: 10px;
+}
+
+
+
+.text-info p {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #7b7a7a;
+    font-weight: 600;
+
+}
+
+.text-info p i {
+    color: black;
+    align-items: center;
+}
+
+
+
+.text-info .gratis {
+    color: #08ca08;
+}
+
+.fimheader {
+    border-top: 1px solid #dccaca;;
+}
+
+@media (max-width:1620px) {
+   .text-title h1 {
+        font-size: 1.5rem;
+    }
+
+    .text-info {     
+    margin-left: 0px;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.text-info p {
+    font-size: 12px;
+}
+ 
+
+.text-info .barra {
+    border-left: 1px solid black;
+    padding: 0 5px;
+    margin: 5px;
+}  
+
+.text-title span {
+    font-size: 15px;
+}
+
+}
+
+@media screen and (max-width:850px) {
+        .text-title h1 {
+        font-size: 1rem;
+    }
+.text-info p {
+    font-size: 10px;
+}
+ 
+.text-title span {
+    font-size: 10px;
+}
+}
+
+@media screen and (max-width:768px) {
+        
+    .container-header, 
+    .container-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-title{
+        align-items: center;
+        text-align: center;
+    }
+    
+    .container-header img {
+        width: 30%;
+
+    }
+}
+
+
+
+                                /*  -- OFERTAS --   */
+
+
+
+.border {
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+                                
+.main h1 {
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.container-ofertas {
+    background-color: #fdfbfb;
+    width:15vw;
+    height:auto;
+    border-radius: 15px;
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.container-img {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container-ofertas img {
+    width: 95%;
+    border-radius: 15px;
+    text-align: cen
+}
+
+.container-text-left h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.container-text-left p {
+    color: #464646;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.container-valor-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-valor-bottom h2 {
+    font-size: 1.3rem;
+}
+
+.container-valor-bottom button {
+    background-color: #9e0505e0;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.4s all;
+}
+.container-valor-bottom button:hover {
+    opacity: 0.8;
+}
+
+.container-pad {
+    display: flex;
+}
+
+.container-valor-bottom span {
+    font-size: 13px;
+    color: #867e7e;
+    line-height: 30px;
+}
+
+
+@media screen and (max-width:1204px) {
+    .container-text-left h3,
+    .container-valor-bottom h2 {
+        font-size: 1.3rem;
+    }
+    .container-text-left p,
+    .container-valor-bottom button {
+        font-size: 0.9rem;
+    }   
+    .container-ofertas { 
+        width:30vw;
+    }
+
+    .container-pad {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .container-text-left h3,
+    .container-valor-bottom h2 {
+        font-size: 1.3rem;
+    }
+    .container-text-left p,
+    .container-valor-bottom button {
+        font-size: 0.9rem;
+    }   
+    .container-ofertas { 
+        width:30vw;
+    }
+}
+
+@media screen and (max-width:800px) {
+        .container-pad {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    }   
+    .container-ofertas { 
+        width:40vw;
+    }
+}
+
+@media screen and (max-width:500px) {
+        .container-text-left h3,
+    .container-valor-bottom h2 {
+        font-size: 0.9rem;
+    }
+    .container-text-left p,
+    .container-valor-bottom button {
+        font-size: 0.6rem;
+    }  
+
+    .container-valor-bottom button {
+        padding: 5px;
+        margin-top: 10px;
+    }
+
+    .container-valor-bottom {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .container-ofertas { 
+        width:40vw;
+    }
+    
+}
+
+
+
+
+
+
+
+
+                        /* FOOTER */
+
+
+                    
+
+.container-footer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.container-footer-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-footer-desc h1 {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #838282;
+    margin-bottom: 20px;
+}
+
+.container-footer-desc p {
+    font-size: 1rem;
+    color: #666666;
+    font-weight: 600;
+}
+
+
+
+.container-contact {
+   display: flex;
+   justify-content: center ;
+   align-items: center;
+   gap: 20px;
+   margin-top: 20px;
+}
+
+.container-contact h3 {
+    color: #666666;
+    font-weight: 600;
+}
+
+.container-contact img {
+    width: 2.3rem;
+    border-radius: 10px;
+    margin: 0 5px;
+}
